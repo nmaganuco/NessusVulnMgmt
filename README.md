@@ -8,6 +8,7 @@ Project consists of
 <h2>Utilities Used</h2>
 
 - <b>Nessus Essentials</b> 
+- <b>Command Prompt</b> 
 
 
 <h2>Environments Used </h2>
@@ -138,10 +139,94 @@ Project consists of
 <br />
 <br />
 
-<b> Fill out the security questions </b> 
+<b> Fill out the security questions. </b> 
 
-<b> Choose your preferred privacy settings (preferably no) </b> 
+<b> Choose your preferred privacy settings. (preferably no) </b> 
 
-<b> Select Accept </b>
+<b> Select Accept. </b>
 
-<b> Select Not Now for Cortana </b>
+<b> Select Not Now for Cortana. </b>
+
+<p align="center">
+<h2> Ensuring Connectivity With The Virtual Windows 10 </h2> 
+<b> Open the Command prompt by searching "CMD."  </b>
+<br />
+<br />
+<img src="https://i.imgur.com/wRZU7Fc.png"/>
+<br />
+<br />
+
+<b> Type "ipconfig" to get the IPv4 address of your virtual Windows 10. </b>
+
+<b> Open the command prompt on your physical pc and type "ping <IPv4 Address>." Make sure to put the IPv4 address of your virtual machine. </b>
+  
+<b> As we can see, your physical pc can't establish a connection with your virtual machine. We can tell because the pings are timing out. This is due to the Windows Firewall blocking network connections. </b>
+<br />
+<br />
+![Failed Ping](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/e73b179e-88a3-450e-b164-97e5241b635b)
+<br />
+<br />
+
+<b> For the purposes of this lab, we are going to disable Windows Firewall. Do not do this with your physical pc as it could be dangerous. </b>
+  
+<b> Seacrch "wf.msc" and it will bring you to the Windows Defender Firewall. </b>
+  
+<b> Click on "Windows Defender Firewall Properties" and select "Off" for all three profiles. </b>
+<br />
+<br />
+![Firewall Off](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/b0e57c0a-43df-430c-8468-a68e664a8ef6)
+<br />
+<br />
+  
+<b> Go back to the command prompt on your physical pc and ping the virtual machine again. This time, we should see a reply from our Windows 10. </b>
+<br />
+<br />
+![Good Pings](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/42366dec-9ac2-4d23-a9a3-a7189639745d)
+<br />
+<br />
+  
+<p align="center">
+<h2> Creating A New Scan On Nessus </h2> 
+<b> Return to your Nessus web app and select "New Scan" > "Basic Network Scan." </b>
+<br />
+<br />
+<img src="https://i.imgur.com/MIUf199.png"/>
+<br />
+<br />
+  
+<b> Type a name for the scan and the targeted IP Address (VM IP Address). Then press "Save." </b>
+<br />
+<br />
+![Animation1](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/97e7bf21-5548-4870-adf7-804a1f99fba6)
+<br />
+<br />
+  
+<b> Select the launch button (play symbol) on the right of your scan to begin scanning the targeted machine. Wait for Nessus to finish scanning. </b>
+<br />
+<br />
+![Progress](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/ead12fb1-1450-47b9-a5d9-b480572e9467)
+<br />
+<br />  
+  
+<b> Once the scan is complete, click on it and go to "Vulnerabilities." From here, we can see vulnerabilities that Nessus discovered. It discovered 34 vulnerabilities, in which 1 is classified as "Medium" and 33 as "Info." Info means that it isn't necessarily a vulnerability, but it should be something that you are made aware of.  </b>
+<br />
+<br />
+![fsdfferw](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/9fc8a21c-82ec-46b0-abd0-0633100add94)
+<br />
+<br />  
+  
+ <b> Looking at the medium vulnerability, we can see that Nessus discovered SMB Signing is not required. Nessus will offer a description of the vulnerability, as well as a solutuion to remediate the vulnerability and other resources for further information.  </b>
+<br />
+<br />
+![Animation12](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/f98fcc05-ae67-4d3b-9ad8-8860132a9bb3)
+<br />
+<br />  
+  
+<p align="center">
+<h2> Configuring The Virtual Machine For Credentialed Scans</h2> 
+<b>  </b>
+<br />
+<br />
+<img src=""/>
+<br />
+<br />  
