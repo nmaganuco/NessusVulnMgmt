@@ -215,7 +215,7 @@ Project consists of
 <br />
 <br />  
   
-<b> Looking at the medium vulnerability, we can see that Nessus discovered SMB Signing is not required. Nessus will offer a description of the vulnerability, as well as a solutuion to remediate the vulnerability and other resources for further information.  </b>
+<b> Looking at the medium vulnerability, we can see that Nessus discovered SMB Signing is not required. Nessus will offer a description of the vulnerability, as well as a solution to remediate the vulnerability and other resources for further information.  </b>
 <br />
 <br />
 ![Animation12](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/f98fcc05-ae67-4d3b-9ad8-8860132a9bb3)
