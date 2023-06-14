@@ -211,7 +211,7 @@ Project consists of
 <b> Once the scan is complete, click on it and go to "Vulnerabilities." From here, we can see vulnerabilities that Nessus discovered. It discovered 34 vulnerabilities, in which 1 is classified as "Medium" and 33 as "Info." Info means that it isn't necessarily a vulnerability, but it should be something that you are made aware of.  </b>
 <br />
 <br />
-![fsdfferw](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/9fc8a21c-82ec-46b0-abd0-0633100add94)
+![Info](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/9fc8a21c-82ec-46b0-abd0-0633100add94)
 <br />
 <br />  
   
@@ -224,9 +224,9 @@ Project consists of
   
 <p align="center">
 <h2> Configuring The Virtual Machine For Credentialed Scans</h2> 
-<b>  </b>
+<b> We are now going to configure the virtual machine to accept authenticated scans and provide credentials to Nessus. Begin by returning to the virtual machine and search for "services.msc." </b>
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/xlQEmEU.png"/>
 <br />
 <br />  
