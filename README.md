@@ -215,7 +215,7 @@ Project consists of
 <br />
 <br />  
   
- <b> Looking at the medium vulnerability, we can see that Nessus discovered SMB Signing is not required. Nessus will offer a description of the vulnerability, as well as a solutuion to remediate the vulnerability and other resources for further information.  </b>
+<b> Looking at the medium vulnerability, we can see that Nessus discovered SMB Signing is not required. Nessus will offer a description of the vulnerability, as well as a solutuion to remediate the vulnerability and other resources for further information.  </b>
 <br />
 <br />
 ![Animation12](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/f98fcc05-ae67-4d3b-9ad8-8860132a9bb3)
@@ -230,3 +230,35 @@ Project consists of
 <img src="https://i.imgur.com/xlQEmEU.png"/>
 <br />
 <br />  
+
+<b> Find the "Remote Registry" service, change the Startup Type to Automatic. Press Apply > Start > OK.  </b>
+<br />
+<br />
+![Animation122](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/f62ac8ca-42bc-4e2d-80ac-7dad3f9880a1)
+<br />
+<br /> 
+  
+<b> Enabling Remote Registry allows Nessus to look through the Registry and look for vulnerabilities such as deprecated cipher suites or insecure configurations. </b>
+
+<b> Exit out of the Services page and search for "User Account Control Settings." Set the setting to "Never Notify."  </b>
+<br />
+<br />
+![Notication settings](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/14d15165-f59c-4750-b888-e5325a80b7c4)
+<br />
+<br />   
+
+<b> Search for "Registry Editor." We will be adding a key that will allow Nessus to connect by futher disabling user account controls. </b>
+  
+<b> Browse to Local Machine > Software > Microsoft > Windows > Current Version > Policies > System. </b>
+<br />
+<br />
+![Registry](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/0c47d4e3-20a1-42bd-8219-dd4ed6758dec)
+<br />
+<br />   
+
+<b> Right-click on an empty white space and select New > DWORD (32-bit) value. Name it "LocalAccountTokenFilterPolicy." Double click it and set the value to 1.  </b>
+<br />
+<br />
+![Editor](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/e6faa61f-628f-46bc-bf95-a5bfcd6fd601)
+<br />
+<br />     
