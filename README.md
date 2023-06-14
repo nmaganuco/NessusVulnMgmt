@@ -169,7 +169,7 @@ Project consists of
 
 <b> For the purposes of this lab, we are going to disable Windows Firewall. Do not do this with your physical pc as it could be dangerous. </b>
   
-<b> Seacrch "wf.msc" and it will bring you to the Windows Defender Firewall. </b>
+<b> Search "wf.msc" and it will bring you to the Windows Defender Firewall. </b>
   
 <b> Click on "Windows Defender Firewall Properties" and select "Off" for all three profiles. </b>
 <br />
