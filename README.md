@@ -86,13 +86,62 @@ Project consists of
 <br />
 <br />
 
+<p align="center">
+<h2> Downloading Windows 10 </h2> 
+  <b> Click on the Windows 10 link and select "Download the ISO - Enterprise." Fill out the form and select the 64-bit edition. </b>
+<br />
+<br />
+<img src="https://i.imgur.com/uzOKTdo.png"/>
+<br />
+<br />
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+<b> On VMWare, select "Create a new virtual machine." </b>
+
+<b> Browse and select the recently downloaded Windows 10 Iso file. </b>
+
+<b> Do not worry about the product key, just press Next. </b>
+
+<b> You can leave the default disk capacity. </b>
+
+<b> Select "Customize Hardware." Change the NAT to "Bridged." This will put the Windows 10 virtual machine on the same network as your physical computer. </b>
+<br />
+<br />
+<img src="https://i.imgur.com/MMBkmGl.png"/>
+<br />
+<br />
+
+<b> Make sure to uncheck "Power on this virtual machine after creation." </b>
+
+<b> Select Close and then Finish.</b>
+
+<b> Click "Edit virtual machine settings" and remove the Floppy drive. </b>
+
+<b> You can now start the Windows 10 virtual machine. Make sure to press a key when it launches to boot into the ISO. </b>
+
+<b> You will be presented with the Windows Setup. </b>
+<br />
+<br />
+<img src="https://i.imgur.com/sHJ01jQ.png"/>
+<br />
+<br />
+
+<b> Select Next > Install Now > Agree to the license terms > Next > Custom > Next.</b>
+
+<b> Windows will now begin installing and will restart when completed.</b>
+
+<b> Select your Region and Keyboard layout.</b>
+
+<b> Press "Domain join instead" and add a name for the user, as well as a password. </b>
+<br />
+<br />
+<img src="https://i.imgur.com/dZFOXKB.png"/>
+<br />
+<br />
+
+<b> Fill out the security questions </b> 
+
+<b> Choose your preferred privacy settings (preferably no) </b> 
+
+<b> Select Accept </b>
+
+<b> Select Not Now for Cortana </b>
