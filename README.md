@@ -262,3 +262,32 @@ Project consists of
 ![Editor](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/e6faa61f-628f-46bc-bf95-a5bfcd6fd601)
 <br />
 <br />     
+
+<b> Restart the virtual machine and login.  </b>
+<br />
+<br />
+![restart](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/7b4308fe-fc7d-4514-8d4d-0beff2c714be)
+<br />
+<br />  
+  
+<p align="center">
+<h2> First Scan With Credentials </h2> 
+<b> Return to Nessus and configure the inital scan of the virtual machine. </b>
+<br />
+<br />
+  
+![Configure](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/207d889d-6ee0-4d74-9767-e892c3a8cad5)
+  
+<b> Click on Credentials > Windows. Then add the username and password of your virtual Windows 10. Select Save > Back to Scan Report > Back to All Scans. Run the vulnerability scan again by pressing the launch button.  </b>
+<br />
+<br />
+![Second Scan](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/82ad30ab-1611-42ec-8809-6a6e0ffcf184)
+<br />
+<br />  
+  
+<b> Once the scan is complete, click on it. We can see that Nessus discovered a lot more vulnerabilities due to having credentials and our virtual Windows 10 not being up to date.  </b>
+<br />
+<br />
+![SecondResults](https://github.com/nmaganuco/NessusVulnMgmt/assets/136499884/08e1673e-073a-4f67-8d02-7171a3713bf5)
+<br />
+<br />  
